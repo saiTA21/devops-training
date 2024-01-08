@@ -13,6 +13,20 @@ The following techniques have been used:
  - Features are generated and the variables are checked for correlation.
  - Multiple sampling techinuqies are evaluated. The data set is split into train and test.
  - All the above said modelling techniques are tried and evaluated. The final metric used to evaluate is mean squared error.
-
+ 
 ## To excute the script
-python < scriptname.py >
+ ### Created conda environment
+  - conda create --name devops-dev python=3.9
+  - conda activate devops-dev
+  - conda install pandas numpy matplotlib scikit-learn six
+
+ ### Run Python Code
+  - Python nonstandardcpde.py
+
+ ### Exported conda environment
+  - conda env export --name devops-dev >env.yml
+
+ ### Create conda environment using env.yml
+  - conda env create -f env.yml
+
+
